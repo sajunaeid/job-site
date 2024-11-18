@@ -1,5 +1,6 @@
 body{
     display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     justify-content: center;
@@ -23,4 +24,102 @@ body{
 
 h1{
     text-decoration: underline;
+}
+
+
+/* new code */
+
+/* Styling the FAQ section */
+.faq-section {
+    width: 90vw;
+    margin: 20px auto;
+    padding: 10px;
+    font-family: var(--roboto);
+    border: 0.2vw solid var(--gray);
+    border-radius: 2vw;
+    box-shadow: 10px 10px 10px var(--gray);
+}
+
+/* FAQ Item */
+.faq-item {
+    margin-bottom: 10px;
+    border: 0.2vw solid var(--gray);
+    position: relative; 
+    border-radius: 1.5vw; 
+    border: 2px solid  #b47e11;
+    box-shadow: 2px 2px 15px #000000 inset;
+    color: white;
+}
+
+/* FAQ Question */
+.faq-question {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 0;
+    transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease; 
+    position: relative;
+    /* background-color: var(--white); */
+    color: var(--black);        
+    padding-right: 30px;    
+    border-radius: 1.5vw;
+}
+
+/* FAQ Answer (Hidden by default) */
+.faq-answer {
+    display: none;
+    padding: 10px 0;
+    color: #555;
+    transition: color 0.5s ease;
+}
+
+/* Triangle Arrow (downward by default) */
+.arrow {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid white;
+    position: absolute;
+    right: 5vw; 
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.5s ease, border-top-color 0.5s ease; 
+}
+
+/* Open/Expanded state */
+.faq-item.active .faq-answer {
+    display: block;
+    transition: max-height 0.5s ease;
+}
+
+/* Rotate arrow upwards when active */
+.faq-item.active .arrow {
+    transform: translateY(-50%) rotate(180deg);
+    border-top-color: var(--white); /* Change arrow color to white */
+}
+
+/* Change background to red and text to white when active */
+.faq-item.active .faq-question{
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 10px 10px 0 0 ;
+}
+.faq-item.active .faq-answer {
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 0 0 10px 10px; /* Rounded corners for the active state */
+}
+
+/* Make sure the question and arrow color both change */
+.faq-item.active .faq-question {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.faq-item.active .faq-answer {
+    color: var(--white); /* Changes the answer text to white */
+}
+
+.faq-question,
+.faq-answer {
+    padding: 10px 15px; /* Adds inner space between the text and background */
+    margin: 0; /* Reset margin */
 }
