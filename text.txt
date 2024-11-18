@@ -1,0 +1,17 @@
+<div class="title">
+    <h1 style="text-align: center;">Shimla Group</h1>
+    <h2 style="font-weight: 600;">সহজেই চাকরির জন্য আবেদন করুন:</h2>
+    <h3 style="font-weight: 500;">১. আপনি যেই পদে চাকরি করতে ইচ্ছুক সেটি বাছাই করুন।</h3>
+    <h3 style="font-weight: 500;">২. আবেদনের জন্য নির্ধারিত ফর্ম এর লিংক এ যেয়ে ফর্ম টি পূরণ করুন।  </h3>
+    <h3 style="font-weight: 500;">৩. আপনার সিভি নির্ধারিত ঠিকিনাতে জমা দিন/ নির্ধারিত মেইলে আপনার সিভি সংযুক্ত করে আবেদন সম্পূর্ণ করুন। </h3>
+</div>
+
+<a href="jobs.html" style="text-decoration: none;">
+    <div class="title">
+        <h3>চাকরি বিবরণ ও বিস্তারিত জানতে ক্লিক করুন </h3>
+            <button role="button" class="golden-button">
+                <span class="golden-text">Golden Button</span>
+            </button>
+        <br><br>
+    </div>
+</a>
